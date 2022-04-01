@@ -28,3 +28,10 @@ function mul(){
   var output=number1*number2;
   setNumber(output)
 }
+
+function div(){
+  var input=getNumber();
+  const {number1,number2}=input;
+  var output=number1/number2;
+  setNumber(output)
+}
