@@ -4,20 +4,32 @@
     <meta charset="utf-8">
     <title> Github Demo</title>
     <script type="text/javascript" src="app.js">
-
     </script>
+    <style>
+    .simple-input {
+        display: block;
+        padding: 5px;
+        border: 4px solid #F1B720;
+        border-radius: 5px;
+        color: #333;
+        transition: all 0.3s ease-out;
+    }
+    .simple-input:hover {
+        border-radius: 8px
+    }
+    .simple-input:focus {
+        outline: none;
+        border-radius: 8px;
+        border-color: #EBD292;
+    }
+    </style>
   </head>
   <body>
 
-    Number 1 = <input id="number1" type="text" placeholder="Enter first number" value=""> <br>
-    Number 2 = <input id="number2" type="text" placeholder="Enter second number" value="">
+    <input id="number1"  class="simple-input" type="text" placeholder="Enter first number" value=""> <br>
+    <input id="number2" class="simple-input" type="text" placeholder="Enter second number" value="">
     <br>
     <button type="button" onclick="add()"  name="button">Add</button>
-<<<<<<< HEAD
-    <button type="button" onclick="sub()"  name="button">Sub</button>
-
-=======
->>>>>>> 14d747fa2997fc3769510d4816f3c448c0fc911f
     Answer <span id="answer"> </span>
   </body>
 </html>
