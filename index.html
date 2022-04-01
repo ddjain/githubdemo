@@ -24,28 +24,51 @@
     }
     .container {
       margin: auto;
-width: 50%;
-border: 3px solid green;
-padding: 10px;
+      width: 50%;
+      border: 3px solid green;
+      padding: 10px;
       font-family: arial;
       font-size: 24px;
-    
     }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1> Simple Calculator</h1>
-      <input id="number1"  class="simple-input" type="text" placeholder="Enter first number" value=""> <br>
-      <input id="number2" class="simple-input" type="text" placeholder="Enter second number" value="">
-      <br>
-      <button type="button" onclick="add()"  name="button">Add</button>
-      <button type="button" onclick="sub()"  name="button">Sub</button>
-      <button type="button" onclick="mul()"  name="button">Mul</button>
-      <button type="button" onclick="div()"  name="button">Div</button>
+    button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
 
-      <br><br>
-      Answer:  <span id="answer"> </span>
-    <div>
-  </body>
+  button {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+  }
+
+  button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  </style>
+        </head>
+        <body>
+          <div class="container">
+            <h1> Simple Calculator</h1>
+            <input id="number1"  class="simple-input" type="text" placeholder="Enter first number" value=""> <br>
+            <input id="number2" class="simple-input" type="text" placeholder="Enter second number" value="">
+            <br>
+            <button type="button" onclick="add()"  name="button">Add</button>
+            <button type="button" onclick="sub()"  name="button">Sub</button>
+            <button type="button" onclick="mul()"  name="button">Mul</button>
+            <button type="button" onclick="div()"  name="button">Div</button>
+
+            <br><br>
+            Answer:  <span id="answer"> </span>
+          <div>
+        </body>
 </html>
