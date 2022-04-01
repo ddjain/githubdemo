@@ -10,14 +10,13 @@ function setNumber(number){
 
 function add(){
   var input=getNumber();
-  const {number1,number2}=input;
-  var output=number1-number2;
+  var output=input.number1+input.number2;
   setNumber(output)
 }
 
+
 function sub(){
   var input=getNumber();
-  const {number1,number2}=input;
-  var output=number1+number2;
+  var output=input.number1-input.number2;
   setNumber(output)
 }
