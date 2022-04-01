@@ -21,3 +21,10 @@ function sub(){
   var output=number1+number2;
   setNumber(output)
 }
+
+function mul(){
+  var input=getNumber();
+  const {number1,number2}=input;
+  var output=number1*number2;
+  setNumber(output)
+}
