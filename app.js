@@ -34,3 +34,7 @@ function div(){
   var output=number1/number2;
   setNumber(output)
 }
+
+function clear(){
+  setNumber(0)
+}
